@@ -1,0 +1,45 @@
+<html>
+<head>
+    <script src="part3.js" defer></script>
+</head>
+<div id="box" onclick="changeColor(id,'yellow')" style="background-color: aqua; margin:20px; " >Click me to change color</div><br>
+<select id="myColor">
+    <option value="Red">Red</option>
+    <option value="Orange">Orange</option>
+    <option value="Yellow">Yellow</option>
+    <option value="Green">Green</option>
+    <option value="Blue">Blue</option>
+</select>
+<button onclick="changeMyColor()">Change Background Color</button><br>
+
+<select id="myFontColor">
+    <option value="Red">Red</option>
+    <option value="Orange">Orange</option>
+    <option value="Yellow">Yellow</option>
+    <option value="Green">Green</option>
+    <option value="Blue">Blue</option>
+</select>
+<button onclick="changeFontColor()">Change Font Color</button><br>
+
+
+<label for="myWidth">Change Width:</label>
+<input type="number" id="myWidth">
+<button onclick="changeWidth()">Change Width</button><br>
+
+
+<label for="myHeight">Height:</label>
+<input type="number" id="myHeight">
+<button onclick="changeHeight()">Change Height</button><br>
+
+<label for="myPadding">Padding:</label>
+<input type="number" id="myPadding">
+<button onclick="changePadding()">Change Padding</button><br>
+
+<label for="myRound">Round Corners:</label>
+<input type="number" id="myRound">
+<button onclick="changeRound()">Round Corners</button><br>
+
+<input type="checkbox" id="myBold" onclick="makeBold()">
+<label for="myBold">Make Bold</label>
+
+</html>

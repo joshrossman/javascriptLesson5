@@ -1,0 +1,21 @@
+<html>
+<head>
+    <link rel="stylesheet" href="javaforms.css">
+    <script src="javaforms.js" defer></script>
+</head>
+
+<body>
+    <form class="form" id="myForm" novalidate>   
+        <label><h1>REGISTRATION FORM</h1></label>
+        <input type="text" placeholder="Username" class="text" id="userName" onkeyup="validateForm(id,false)"><br>
+        <label for="userName" id="userNameLabel" class="mylabel"></label>
+        <input type="email" placeholder="Email Address" class="text" id="email" onkeyup="validateForm(id,false)"><br>
+        <label for="email" id="emailLabel" class="mylabel"></label>
+        <textarea cols="30" rows="10" placeholder="Comments" style="padding:5px;margin:4px;" id="comments" onkeyup="validateForm(id,false)"></textarea><br>
+        <label for="comments" id="commentsLabel" class="mylabel" ></label><br>
+        <button type="submit" class="submit" id="mysubmit" onmouseover="validateForm(id,true)">Submit</button>
+    </form>
+
+
+</body>
+</html>
