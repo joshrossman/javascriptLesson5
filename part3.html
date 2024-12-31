@@ -3,43 +3,61 @@
     <script src="part3.js" defer></script>
 </head>
 <div id="box" onclick="changeColor(id,'yellow')" style="background-color: aqua; margin:20px; " >Click me to change color</div><br>
-<select id="myColor">
+<label for="Color">Change Background Color:</label>
+<select id="myColor" onclick="changeMyColor()">
     <option value="Red">Red</option>
     <option value="Orange">Orange</option>
     <option value="Yellow">Yellow</option>
     <option value="Green">Green</option>
     <option value="Blue">Blue</option>
-</select>
-<button onclick="changeMyColor()">Change Background Color</button><br>
+</select><br>
 
-<select id="myFontColor">
+
+<label for="myFontColor">Change Font Color:</label>
+<select id="myFontColor" onclick="changeFontColor()">
     <option value="Red">Red</option>
     <option value="Orange">Orange</option>
     <option value="Yellow">Yellow</option>
     <option value="Green">Green</option>
     <option value="Blue">Blue</option>
-</select>
-<button onclick="changeFontColor()">Change Font Color</button><br>
+</select><br>
+
+<label for="myFont">Type Font Family</label>
+<select id="myFont" onclick="changeFont()">
+    <option value="cursive">Cursive</option>
+    <option value="fantasy">Fantasy</option>
+    <option value="arial">Arial</option>
+    <option value="helvetica">Helvetica</option>
+    <option value="verdana">Verdana</option>
+    <option value="georgia">Georgia</option>
+
+</select><br>
+
+
 
 
 <label for="myWidth">Change Width:</label>
-<input type="number" id="myWidth">
-<button onclick="changeWidth()">Change Width</button><br>
+<input type="number" id="myWidth" onclick="changeWidth()" onkeyup="changeWidth()"><br>
 
 
-<label for="myHeight">Height:</label>
-<input type="number" id="myHeight">
-<button onclick="changeHeight()">Change Height</button><br>
+
+<label for="myHeight">Change height:</label>
+<input type="number" id="myHeight" onclick="changeHeight()" onkeyup="changeHeight()"><br>
 
 <label for="myPadding">Padding:</label>
-<input type="number" id="myPadding">
-<button onclick="changePadding()">Change Padding</button><br>
+<input type="number" id="myPadding" style="margin-left:42px" onclick="changePadding()" onkeyup="changePadding()"><br>
+
 
 <label for="myRound">Round Corners:</label>
-<input type="number" id="myRound">
-<button onclick="changeRound()">Round Corners</button><br>
+<input type="number" id="myRound" onclick="changeRound()"" onkeyup="changeRound()"><br>
 
 <input type="checkbox" id="myBold" onclick="makeBold()">
-<label for="myBold">Make Bold</label>
+<label for="myBold">Make Bold</label><br>
+
+<input type="checkbox" id="myUpper" onclick="changeUpper()">
+<label for="myUpper">Make Uppercase:</label><br>
+
+<input type="checkbox" id="myCenter" onclick="changeCenter()">
+<label for="myCenter">Center Text</label>
 
 </html>
